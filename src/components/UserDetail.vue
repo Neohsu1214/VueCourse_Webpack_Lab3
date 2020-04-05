@@ -60,7 +60,8 @@ export default {
     },
     changeDataFroSiblings: function() {
         this.dataForSibling = 'QWERT';
-        eventBus.$emit('dataForSiblingsWasUpdated', this.dataForSibling);
+        //eventBus.$emit('dataForSiblingsWasUpdated', this.dataForSibling);
+        eventBus.updateDataForSiblings(this.dataForSibling);
     }
   }
 };
